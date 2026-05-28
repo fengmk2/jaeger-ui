@@ -27,9 +27,7 @@
     "npm-run-all2": "9.0.1",
     "openapi-zod-client": "1.18.3",
     "typescript": "6.0.2",
-    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1588",
-    "@vitest/coverage-v8": "4.1.4",
-    "vitest": "4.1.4"
+    "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1588"
   },
   "overrides": {
     "react": "19.2.0",
