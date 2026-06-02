@@ -28,8 +28,8 @@
     "openapi-zod-client": "1.18.3",
     "typescript": "6.0.2",
     "vite-plus": "https://pkg.pr.new/voidzero-dev/vite-plus@1738",
-    "@vitest/coverage-v8": "4.1.4",
-    "vitest": "4.1.4"
+    "@vitest/coverage-v8": "4.1.8",
+    "vitest": "4.1.8"
   },
   "overrides": {
     "react": "19.2.0",
