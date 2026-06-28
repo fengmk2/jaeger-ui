@@ -4,6 +4,10 @@
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+  staged: {
+    '*.{js,jsx,ts,tsx,mts}': ['vp lint --fix --no-error-on-unmatched-pattern', 'vp fmt'],
+    '*.{json,css}': ['vp fmt --no-error-on-unmatched-pattern'],
+  },
   fmt: {
     arrowParens: 'avoid',
     printWidth: 110,
