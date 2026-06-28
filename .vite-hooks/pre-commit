@@ -4,4 +4,4 @@
 if [ -x "${HOME}/.config/git/hooks/pre-commit" ]; then
   "${HOME}/.config/git/hooks/pre-commit" || exit $?
 fi
-npx lint-staged
+vp staged

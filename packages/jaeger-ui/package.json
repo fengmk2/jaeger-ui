@@ -27,7 +27,7 @@
     "identity-obj-proxy": "3.0.0",
     "less": "4.6.4",
     "terser": "5.48.0",
-    "vite": "8.0.16",
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.4f61f920640a17d1ebd019f516e883f6de6a9811",
     "vitest": "4.1.9"
   },
   "dependencies": {
@@ -83,11 +83,11 @@
     "zustand": "^5.0.12"
   },
   "scripts": {
-    "build": "NODE_ENV=production REACT_APP_VSN_STATE=$(../../scripts/get-tracking-version.js) vite build",
-    "coverage": "vitest run --coverage",
-    "start:ga-debug": "REACT_APP_GA_DEBUG=1 REACT_APP_VSN_STATE=$(../../scripts/get-tracking-version.js) vite",
-    "start": "vite",
-    "test": "vitest run",
-    "test-ci": "CI=1 vitest run --reporter=verbose"
+    "build": "NODE_ENV=production REACT_APP_VSN_STATE=$(../../scripts/get-tracking-version.js) vp build",
+    "coverage": "vp test run --coverage",
+    "start:ga-debug": "REACT_APP_GA_DEBUG=1 REACT_APP_VSN_STATE=$(../../scripts/get-tracking-version.js) vp dev",
+    "start": "vp dev",
+    "test": "vp test run",
+    "test-ci": "CI=1 vp test run --reporter=verbose"
   }
 }
