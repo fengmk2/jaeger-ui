@@ -35,7 +35,7 @@
   },
   "scripts": {
     "build": "tsc --noEmit",
-    "coverage": "vitest run --coverage",
-    "test": "vitest run"
+    "coverage": "vp test run --coverage",
+    "test": "vp test run"
   }
 }

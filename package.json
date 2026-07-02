@@ -27,7 +27,7 @@
     "npm-run-all2": "9.0.1",
     "openapi-zod-client": "1.18.3",
     "typescript": "6.0.2",
-    "vite-plus": "0.2.1",
+    "vite-plus": "0.0.0-commit.1d7ba811f0e456640b0e761e8e8acf77d1ad3251",
     "@vitest/coverage-v8": "4.1.9",
     "vitest": "4.1.9"
   },
@@ -37,7 +37,9 @@
     "yaml": "2.9.0",
     "@exodus/bytes": {
       "@noble/hashes": "$@noble/hashes"
-    }
+    },
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.0.0-commit.1d7ba811f0e456640b0e761e8e8acf77d1ad3251",
+    "vitest": "4.1.9"
   },
   "workspaces": [
     "packages/plexus",
