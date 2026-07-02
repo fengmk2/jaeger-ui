@@ -1,7 +1,7 @@
 // Copyright (c) 2023 The Jaeger Authors.
 // SPDX-License-Identifier: Apache-2.0
 
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import fs from 'fs';
@@ -272,6 +272,12 @@ export default defineConfig({
         './src/components/TracePage/index.tsx',
       ],
     },
+  },
+  optimizeDeps: {
+    // react-icons/tb is a 4400+ icon barrel. Vite 8 / Rolldown pre-bundles it
+    // into a single 4 MB file that Rolldown's import-analysis parser can't handle.
+    // Exclude it so Vite serves the ESM entry directly without pre-bundling.
+    exclude: ['react-icons/tb'],
   },
   base: './',
   build: {
